@@ -17,6 +17,44 @@ p {
    margin: 2em auto;
 }
 
+p::first-line {
+   color: orange;
+   text-shadow: 0px 0px 3px white;
+   word-spacing: 2em;
+   line-height: 2.5em;
+}
+
+p::first-letter {
+   background-color: rgb(154, 154, 154);
+   padding: 0.6em 0.5em;
+}
+
+p::before {
+   content: "♥";
+   color: red;
+}
+
+p::after {
+   content: "😎";
+}
+
+li::marker {
+   color: green;
+}
+
+ul {
+   margin: auto 20%;
+}
+
+li {
+   text-align: start;
+}
+
+p::selection {
+   background-color: white;
+   color: black;
+}
+
 #heya {
    color: #1a1a20;
 }
